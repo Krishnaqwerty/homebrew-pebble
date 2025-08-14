@@ -5,13 +5,7 @@ class Pebble < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/Krishnaqwerty/Pebble/releases/download/v1.0.0/pebble-macos-arm64.tar.gz"
-    sha256 "PUT_ARM64_SHA256"
-  elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/Krishnaqwerty/Pebble/releases/download/v1.0.0/pebble-macos-x86_64.tar.gz"
-    sha256 "PUT_X86_64_SHA256"
-  elsif OS.linux?
-    url "https://github.com/Krishnaqwerty/Pebble/releases/download/v1.0.0/pebble-linux-x86_64.tar.gz"
-    sha256 "PUT_LINUX_SHA256"
+    sha256 "ea9bed845b1ccd8c5c4400c039fa7a455a6f3a8ccb9c5d8be4ea19c4c333bcbe"
   else
     odie "Pebble is not supported on this platform"
   end
