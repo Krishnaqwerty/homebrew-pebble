@@ -11,7 +11,7 @@ class Pebble < Formula
   end
 
   def install
-    bin.install "pebble-macos-arm64/pebble"
+    bin.install "pebble"
   end
 
   test do
